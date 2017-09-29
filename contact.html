@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="resources/css/projects.css">
+</head>
+<body>
+<div id="sideNavigation" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">O mnie</a>
+  <a href="projects.html">Projekty</a>
+</div>
+ 
+<nav class="topnav">
+  <a class="hamburger" href="#" onclick="openNav()">
+   <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+  </a>
+</nav>
+ 
+<div id="main">
+<section class="contact">
+<div class="container">
+<h2>Chcesz się ze mną skontaktować?</h2>
+    
+<form action="https://formspree.io/dorota.szostak@gmail.com" method="POST">
+<div class="form">
+<label for="name">Imię i nazwisko: </label><br>
+<input type="text" id="name" name="name>">
+</div>
+<div class="form">
+<label for="mail">E-mail: </label><br>
+<input type="email" id="mail" name="email">
+</div>
+<div class="form">
+<label for="msg">Wiadomość: </label><br>
+<textarea id="msg" name="message"></textarea>
+</div>
+<div class="form">
+<button type="submit" value="Send">Wyślij</button>
+</div>
+
+</form>
+</div>
+</section>
+    
+<footer>
+<div class="container">
+    <div class="row">
+ <div class="col-md-6">
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">O mnie</a></li>
+                <li><a href="projects.html">Projekty</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+            <ul class="social-links">
+                <li><a href="#"><i class="ion-social-linkedin-outline"></i></a></li>
+                <li><a href="https://github.com/DorotaSzostak"><i class="ion-social-github-outline"></i></a></li>
+                </ul>
+            </div>
+    </div>
+</div>
+
+</footer>
+</div>
+</body>
+<script src="resources/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>
