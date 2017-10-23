@@ -1,0 +1,62 @@
+/*NAWIGACJA*/
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: $light-blue; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    -webkit-transition: 0.5s;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $dirt-pink;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+        &:hover {
+            background-color: #353848;
+        }
+}
+}
+
+ 
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+ 
+.topnav {
+    background-color: #353848;
+    overflow: hidden;
+    &:after {
+    content: "";
+    display: block;
+    clear: both;
+        .hamburger {
+    float: left;
+    display: block;
+    color: $dirt-pink;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 80%;
+}
+}
+}
+
+.ion-navicon-round {
+    font-size: 180%; 
+    color: $dirt-pink;
+    padding: 5px;
+}

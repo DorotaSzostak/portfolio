@@ -1,0 +1,69 @@
+
+/*FORM*/
+
+.contact {
+    background-color: $dirt-blue;
+    padding-bottom: 15%;
+    padding-top: 5%;
+}
+.contact h2 {
+    font-size: 150%;
+    text-align: center;
+    color:#fff;
+    padding-top: 5%;
+}
+form {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.form {
+    padding: 1%;
+    font-size: 40%;
+}
+
+input {
+    margin-top: 2%;
+    border-bottom: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    color: $dirt-pink;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+}
+
+textarea {
+    height: 120px;
+    border: 2px solid #fff;
+    outline: none;
+    width: 100%;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #cb7575;
+    font-size: 18px;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    &:hover {
+    background-color: #fff;
+    border: 2px solid #cb7575;
+    color: #cb7575;
+}
+}

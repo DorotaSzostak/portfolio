@@ -1,0 +1,72 @@
+.projects {
+   width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.projects__yelpcamp {
+background-image: url(img/yelpcamp.jpg);
+background-size: cover;
+background-position: center;
+flex: 1 1 500px;
+
+}
+
+.projects__tasty-travel {
+    background-image: url(img/tastytravel.jpg);
+    background-size: cover;
+    background-position: right;
+    flex: 1 1 500px;
+}
+
+.projects__omnifood {
+    background-image: url(img/omni.jpg);
+    background-size: cover;
+    flex: 1 1 500px;
+}
+
+.projects__daily-dozen {
+    background-image: url(img/dily%20dozen.jpg);
+    background-size: cover;
+    background-position: center;
+   flex: 1 1 500px;
+}
+
+.projects__patatap {
+background-image: url(img/patatap.jpg);
+    background-size:cover;
+    flex: 1 1 500px;
+    
+}
+
+.projects__empty {
+     background-color: #353848;
+    flex: 1 1 500px;
+}
+
+.work-info {
+    height: 45vh;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    background-color: #353848;
+    &:hover {
+        opacity: 0.7;
+    }
+    i {
+    font-size: 200%;
+    color: #f1f6f5;
+}
+    
+}
+
+.text {
+    width: 100%;
+    color: #f1f6f5;
+    font-size: 100%;
+    line-height: 1,5px;
+    padding: 10%;
+    text-align: center;
+}

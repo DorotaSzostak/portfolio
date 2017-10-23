@@ -5,46 +5,41 @@
 	 <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="vendors/fonts/ionicons-2.0.1/css/ionicons.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="resources/css/projects.css">
+<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
 </head>
 <body>
 <div id="sideNavigation" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
+  <a href="about.html">O mnie</a>
   <a href="projects.html">Projekty</a>
-  <a href="contact.html">Kontakt</a>
 </div>
  
-<nav class="topnav">
+<div class="topnav">
   <a class="hamburger" href="#" onclick="openNav()">
-   <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+      <i class="ion-navicon-round"></i>
   </a>
-</nav>
+</div>
  
 <div id="main">
     
-<section class="about-me">
-<div class="row">
-<div class="col-md-4 col-sm-12 about">
-<img class="img-fluid" src="resources/css/img/rsz_img_3894-min.jpg">
+<section class="about">
+
+<div class="about__img">
+<img class="about__img--fluid" src="resources/css/img/rsz_img_3894-min.jpg">
 </div>
-<div class="col-md-4 col-sm-12 about">
+<div class="about__text">
 <h2>Kim jestem?</h2>
-<div class="about-text">
 <h4>Nazywam się Dorota Szostak. Jestem na początku drogi do zostania front-end developerem.</h4>
 <h4>W tematyce fron-endowej jestem samoukiem. Do tej pory ukończyłam kilka mniejszych i większych kursów na Udemy m.in.The Web Developer Bootcamp, Build Responsive Real World Websites with HTML and CSS, The Complete JavaScript Course.</h4>
 <h4>Aktualnie chciałabym przejść z nauki w domowym zaciszu, do zdobywania doświadczenia w pracy, przy prawdziwych projektach. Dlatego jestem otwarta na wszelkie formy współpracy, które pozwolą mi rozwijać umiejętności front-endowca. W szczególności szukam stacjonarnej pracy w Warszawie.</h4>
 <h4>Z wykształcenia jestem dietetykiem i tym zajmuje się do tej pory, łącząc naukę kodowania z obecną pracą. Jednak moją dalszą karierę chcę związać z web-developmentem. </h4>
 </div>
-</div>
-<div class="col-md-4 col-sm-12 about">
+<div class="about__skills">
 <h2>Umiejętności</h2>
-<div class="about-text"><h4>Do tej pory tworzę swoje projekty używając głównie 
+<h4>Do tej pory tworzę swoje projekty używając głównie 
 <ul>
 <li>HTML5</li>
 <li>CSS3, do którego zaczynam wprowadzać BEM</li>
@@ -52,14 +47,14 @@
 <li>podstawy JavaScript i jQuery</li>
 </ul> Wykorzystuję również Bootstrap lub SemanticUI.
 Cały czas staram się uczyć czegoś nowego i szlifować zdobyte do tej pory umiejętności. <br>Podczas nauki korzystałam z takich narzędzi i technologii jak NodeJS, ExpressJS, MongoDB, PassportJS a także stosowałam autentykację oraz REST.</h4>
+
+<h2>Dodatkowe Informacje</h2>
+<h4>Język angielski na poziomie B2</h4>
+
 </div>
     
-<h2>Dodatkowe Informacje</h2>
-
-<h4>Język angielski na poziomie B2</h4>
-</div>
-</div>
 </section>
+
 <section class="contact">
 <h2>Chcesz się ze mną skontaktować?</h2>
 <form action="https://formspree.io/dorota.szostak@gmail.com" method="POST">
@@ -83,22 +78,18 @@ Cały czas staram się uczyć czegoś nowego i szlifować zdobyte do tej pory um
 </section>
    
 <footer>
-    <div class="row">
- <div class="col-md-6">
-            <ul class="footer-nav">
-                 <li><a href="index.html">Home</a></li>
+ <div class="footer__nav">
+            <ul class="footer__nav--links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">O mnie</a></li>
                 <li><a href="projects.html">Projekty</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-            <ul class="social-links">
+     </ul>
+            <ul class="footer__nav--social">
                 <li><a href="https://www.linkedin.com/in/dorota-szostak-ba3876129/"><i class="ion-social-linkedin-outline"></i></a></li>
                 <li><a href="https://github.com/DorotaSzostak"><i class="ion-social-github-outline"></i></a></li>
                 </ul>
             </div>
-    </div>
 </footer>
  </div>
 </body>

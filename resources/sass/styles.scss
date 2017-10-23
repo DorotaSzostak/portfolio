@@ -1,0 +1,39 @@
+@import "colors";
+
+
+@import "about";
+@import "nawigacja";
+@import "form";
+@import "footer";
+@import "home";
+@import "projects";
+
+//Reset//
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    max-width: 2600px;
+    height: 100vh;
+    
+}
+
+body {
+    font-size: 20px;
+    background-color: #cb7575;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}

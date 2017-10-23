@@ -1,0 +1,45 @@
+.about {
+    background-color: $light-blue;
+    color: $dirt-pink;
+    font-family: "Lato";
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__img{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+
+.about__img--fluid {
+    width: 100%;
+}
+
+
+.about__text {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 20px;
+}
+
+.about__skills {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 20px;
+    li {
+    list-style: inside;
+}
+}
+
+h4 {
+    line-height: 2;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 425px){
+    h4{
+        font-size: 90%;
+    }
+}
