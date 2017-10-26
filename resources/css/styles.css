@@ -42,15 +42,16 @@
   flex-basis: 300px;
   padding: 20px; }
   .about__skills li {
-    list-style: inside; }
+    list-style: inside;
+    padding-bottom: 2%; }
 
-h4 {
+p {
   line-height: 2;
   font-size: 100%;
   font-weight: 400; }
 
 @media only screen and (max-width: 425px) {
-  h4 {
+  p {
     font-size: 90%; } }
 
 /*NAWIGACJA*/
