@@ -57,24 +57,17 @@ p {
 /*NAWIGACJA*/
 .sidenav {
   height: 100%;
-  /* 100% Full-height */
   width: 0;
-  /* 0 width - change this with JavaScript */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Stay on top */
   top: 0;
   left: 0;
   background-color: #f1f6f5;
   overflow-x: hidden;
-  /* Disable horizontal scroll */
   padding-top: 60px;
-  /* Place content 60px from the top */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */ }
+  transition: 0.5s; }
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -117,10 +110,21 @@ p {
   color: #cb7575;
   padding: 5px; }
 
+.sidenav__open {
+  -webkit-transition: margin-left .5s;
+  -o-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 0px;
+  overflow: hidden;
+  width: 100%; }
+
+body {
+  overflow-x: hidden; }
+
 /*FORM*/
 .contact {
   background-color: #a3c9c7;
-  padding-bottom: 15%;
+  padding-bottom: 10%;
   padding-top: 5%; }
 
 .contact h2 {
@@ -128,11 +132,17 @@ p {
   text-align: center;
   color: #fff;
   padding-top: 5%; }
+  @media only screen and (max-width: 425px) {
+    .contact h2 {
+      font-size: 120%; } }
 
 form {
   width: 50%;
   margin: 0 auto;
   margin-top: 5%; }
+  @media only screen and (max-width: 425px) {
+    form {
+      width: 90%; } }
 
 .form {
   padding: 1%;
@@ -140,6 +150,7 @@ form {
 
 input {
   margin-top: 2%;
+  padding: 5px;
   border-bottom: 2px solid #fff;
   border-top: none;
   border-left: none;
@@ -246,7 +257,7 @@ footer {
 .projects__tasty-travel {
   background-image: url(img/tastytravel.jpg);
   background-size: cover;
-  background-position: right;
+  background-position: center;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 500px;
   -ms-flex: 1 1 500px;
@@ -255,6 +266,7 @@ footer {
 .projects__omnifood {
   background-image: url(img/omni.jpg);
   background-size: cover;
+  background-position: center;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 500px;
   -ms-flex: 1 1 500px;
@@ -272,6 +284,7 @@ footer {
 .projects__patatap {
   background-image: url(img/patatap.jpg);
   background-size: cover;
+  background-position: center;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 500px;
   -ms-flex: 1 1 500px;

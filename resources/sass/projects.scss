@@ -16,13 +16,14 @@ flex: 1 1 500px;
 .projects__tasty-travel {
     background-image: url(img/tastytravel.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     flex: 1 1 500px;
 }
 
 .projects__omnifood {
     background-image: url(img/omni.jpg);
     background-size: cover;
+    background-position: center;
     flex: 1 1 500px;
 }
 
@@ -36,6 +37,7 @@ flex: 1 1 500px;
 .projects__patatap {
 background-image: url(img/patatap.jpg);
     background-size:cover;
+    background-position: center;
     flex: 1 1 500px;
     
 }
