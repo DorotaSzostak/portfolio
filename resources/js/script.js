@@ -14,3 +14,9 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
 }
 
+var navBtn = document.querySelector(".closebtn");
+
+navBtn.addEventListener("click", function(){
+    closeNav();
+})
+

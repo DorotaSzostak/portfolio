@@ -5,46 +5,47 @@
     height: 100%;
 }
 
-.projects__yelpcamp {
+.projects__item {
+    flex: 1 1 500px;
+    transform:  scale(1.01);
+       &:hover {
+      transform: scale(1); 
+        transition: all 0.8s;
+    }
+}
+
+.yelpcamp {
 background-image: url(img/yelpcamp.jpg);
 background-size: cover;
 background-position: center;
-flex: 1 1 500px;
-
 }
 
-.projects__tasty-travel {
+.tasty-travel {
     background-image: url(img/tastytravel.jpg);
     background-size: cover;
     background-position: center;
-    flex: 1 1 500px;
 }
 
-.projects__omnifood {
+.omnifood {
     background-image: url(img/omni.jpg);
     background-size: cover;
     background-position: center;
-    flex: 1 1 500px;
 }
 
-.projects__daily-dozen {
+.daily-dozen {
     background-image: url(img/dily%20dozen.jpg);
     background-size: cover;
     background-position: center;
-   flex: 1 1 500px;
 }
 
-.projects__patatap {
+.patatap {
 background-image: url(img/patatap.jpg);
     background-size:cover;
-    background-position: center;
-    flex: 1 1 500px;
-    
+    background-position: center;  
 }
 
-.projects__empty {
+.empty {
      background-color: #353848;
-    flex: 1 1 500px;
 }
 
 .work-info {

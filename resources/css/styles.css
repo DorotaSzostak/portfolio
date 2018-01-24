@@ -3,19 +3,15 @@
   color: #cb7575;
   font-family: "Lato";
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
 .about__img {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -webkit-flex-basis: 300px;
   -ms-flex-preferred-size: 300px;
   flex-basis: 300px; }
 
@@ -24,20 +20,16 @@
 
 .about__text {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -webkit-flex-basis: 300px;
   -ms-flex-preferred-size: 300px;
   flex-basis: 300px;
   padding: 20px; }
 
 .about__skills {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -webkit-flex-basis: 300px;
   -ms-flex-preferred-size: 300px;
   flex-basis: 300px;
   padding: 20px; }
@@ -75,11 +67,10 @@ p {
     color: #cb7575;
     display: block;
     -webkit-transition: 0.3s;
-    -webkit-transition: 0.3s .sidenav a;
-    -o-transition: 0.3s .sidenav a;
-    transition: 0.3s .sidenav a; }
-    .sidenav a :hover {
-      background-color: #353848; }
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .sidenav a:hover {
+    color: #353848; }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
@@ -195,27 +186,21 @@ footer {
 
 .footer__nav {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .footer__nav ul {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .footer__nav li {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 0px;
     -ms-flex: 1 1 0px;
     flex: 1 1 0px;
     list-style: none; }
@@ -237,65 +222,54 @@ footer {
 .projects {
   width: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   height: 100%; }
 
-.projects__yelpcamp {
+.projects__item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 500px;
+  flex: 1 1 500px;
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01); }
+  .projects__item:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s; }
+
+.yelpcamp {
   background-image: url(img/yelpcamp.jpg);
   background-size: cover;
-  background-position: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 500px;
-  -ms-flex: 1 1 500px;
-  flex: 1 1 500px; }
+  background-position: center; }
 
-.projects__tasty-travel {
+.tasty-travel {
   background-image: url(img/tastytravel.jpg);
   background-size: cover;
-  background-position: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 500px;
-  -ms-flex: 1 1 500px;
-  flex: 1 1 500px; }
+  background-position: center; }
 
-.projects__omnifood {
+.omnifood {
   background-image: url(img/omni.jpg);
   background-size: cover;
-  background-position: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 500px;
-  -ms-flex: 1 1 500px;
-  flex: 1 1 500px; }
+  background-position: center; }
 
-.projects__daily-dozen {
+.daily-dozen {
   background-image: url(img/dily%20dozen.jpg);
   background-size: cover;
-  background-position: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 500px;
-  -ms-flex: 1 1 500px;
-  flex: 1 1 500px; }
+  background-position: center; }
 
-.projects__patatap {
+.patatap {
   background-image: url(img/patatap.jpg);
   background-size: cover;
-  background-position: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 500px;
-  -ms-flex: 1 1 500px;
-  flex: 1 1 500px; }
+  background-position: center; }
 
-.projects__empty {
-  background-color: #353848;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 500px;
-  -ms-flex: 1 1 500px;
-  flex: 1 1 500px; }
+.empty {
+  background-color: #353848; }
 
 .work-info {
   height: 45vh;
