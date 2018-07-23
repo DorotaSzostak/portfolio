@@ -16,7 +16,9 @@
   flex-basis: 300px; }
 
 .about__img--fluid {
-  width: 100%; }
+  width: 100%;
+  -webkit-animation: fadeDown 1s linear;
+  animation: fadeDown 1s linear; }
 
 .about__text {
   -webkit-box-flex: 1;
@@ -24,7 +26,9 @@
   flex-grow: 1;
   -ms-flex-preferred-size: 300px;
   flex-basis: 300px;
-  padding: 20px; }
+  padding: 20px;
+  -webkit-animation: fadeInLeft 0.8s linear;
+  animation: fadeInLeft 0.8s linear; }
 
 .about__skills {
   -webkit-box-flex: 1;
@@ -32,7 +36,9 @@
   flex-grow: 1;
   -ms-flex-preferred-size: 300px;
   flex-basis: 300px;
-  padding: 20px; }
+  padding: 20px;
+  -webkit-animation: fadeInLeft 0.8s linear;
+  animation: fadeInLeft 0.8s linear; }
   .about__skills li {
     list-style: inside;
     padding-bottom: 2%; }
@@ -45,6 +51,36 @@ p {
 @media only screen and (max-width: 425px) {
   p {
     font-size: 90%; } }
+
+@-webkit-keyframes fadeDown {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeDown {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    -webkit-transform: translateX(-800px);
+    transform: translateX(-800px); }
+  100% {
+    margin-left: 0; } }
+
+@keyframes fadeInLeft {
+  0% {
+    -webkit-transform: translateX(-800px);
+    transform: translateX(-800px); }
+  100% {
+    margin-left: 0; } }
 
 /*NAWIGACJA*/
 .sidenav {
@@ -234,7 +270,12 @@ footer {
   flex: 1 1 500px;
   -webkit-transform: scale(1.01);
   -ms-transform: scale(1.01);
-  transform: scale(1.01); }
+  transform: scale(1.01);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -o-transition: transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s; }
   .projects__item:hover {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -246,30 +287,50 @@ footer {
 .yelpcamp {
   background-image: url(img/yelpcamp.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  -webkit-animation: loading 1s linear 0.4s;
+  animation: loading 1s linear 0.4s; }
 
 .tasty-travel {
   background-image: url(img/tastytravel.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  -webkit-animation: loading 0.5s linear 0.5s;
+  animation: loading 0.5s linear 0.5s; }
+  @media only screen and (max-width: 425px) {
+    .tasty-travel {
+      -webkit-animation: loading 0.5s linear 0.1s;
+      animation: loading 0.5s linear 0.1s; } }
 
 .omnifood {
-  background-image: url(img/omni.jpg);
+  background-image: url(img/skoda2.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  -webkit-animation: loading 0.5s linear 0.4s;
+  animation: loading 0.5s linear 0.4s; }
+  @media only screen and (max-width: 425px) {
+    .omnifood {
+      -webkit-animation: loading 0.5s linear 0.2s;
+      animation: loading 0.5s linear 0.2s; } }
 
 .daily-dozen {
   background-image: url(img/dily%20dozen.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  -webkit-animation: loading 0.5s linear 0.3s;
+  animation: loading 0.5s linear 0.3s; }
 
 .patatap {
   background-image: url(img/patatap.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  -webkit-animation: loading 0.5s linear 0.2s;
+  animation: loading 0.5s linear 0.2s; }
 
 .empty {
-  background-color: #353848; }
+  background-color: #353848;
+  -webkit-animation: loading 0.5s linear 0.1s;
+  animation: loading 0.5s linear 0.1s; }
 
 .work-info {
   height: 45vh;
@@ -292,6 +353,22 @@ footer {
   line-height: 1,5px;
   padding: 5%;
   text-align: center; }
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes loading {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 
 * {
   margin: 0;

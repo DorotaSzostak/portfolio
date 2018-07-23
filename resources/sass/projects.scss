@@ -8,6 +8,7 @@
 .projects__item {
     flex: 1 1 500px;
     transform:  scale(1.01);
+    transition: transform 0.4s;
        &:hover {
       transform: scale(1); 
         transition: all 0.8s;
@@ -18,34 +19,46 @@
 background-image: url(img/yelpcamp.jpg);
 background-size: cover;
 background-position: center;
+animation: loading 1s linear 0.4s;
 }
 
 .tasty-travel {
     background-image: url(img/tastytravel.jpg);
     background-size: cover;
     background-position: center;
+    animation: loading 0.5s linear 0.5s;
+    @media only screen and (max-width: 425px){
+        animation: loading 0.5s linear 0.1s;
+    }
 }
 
 .omnifood {
-    background-image: url(img/omni.jpg);
+    background-image: url(img/skoda2.jpg);
     background-size: cover;
     background-position: center;
+    animation: loading 0.5s linear 0.4s;
+        @media only screen and (max-width: 425px){
+        animation: loading 0.5s linear 0.2s;
+    }
 }
 
 .daily-dozen {
     background-image: url(img/dily%20dozen.jpg);
     background-size: cover;
     background-position: center;
+    animation: loading 0.5s linear 0.3s;
 }
 
 .patatap {
 background-image: url(img/patatap.jpg);
     background-size:cover;
-    background-position: center;  
+    background-position: center;
+    animation: loading 0.5s linear 0.2s;
 }
 
 .empty {
      background-color: #353848;
+    animation: loading 0.5s linear 0.1s;
 }
 
 .work-info {
@@ -72,4 +85,13 @@ background-image: url(img/patatap.jpg);
     line-height: 1,5px;
     padding: 5%;
     text-align: center;
+}
+
+@keyframes loading {
+    0%{
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

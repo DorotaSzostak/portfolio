@@ -9,8 +9,14 @@ html {
 .nav-centered {
   position: absolute;
   width: 100%;
-  top: 30%;
   text-align: center;
+  top: 30%;
+    li:nth-child(odd){
+        animation: fadeLeft 1s linear;
+    }
+    li:nth-child(even){
+        animation: fadeRight 1s linear;
+    }
 }
 
 /*VIDEO*/
@@ -59,3 +65,25 @@ li a:hover {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100% {
+        text-align: center;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        transform: translateX(220px);
+        opacity: 0;
+    }
+    100% {
+        text-align: center;
+        opacity: 1;
+    }
+}

@@ -14,6 +14,7 @@
 
 .about__img--fluid {
     width: 100%;
+    animation: fadeDown 1s linear;
 }
 
 
@@ -21,12 +22,14 @@
     flex-grow: 1;
     flex-basis: 300px;
     padding: 20px;
+    animation: fadeInLeft 0.8s linear;
 }
 
 .about__skills {
     flex-grow: 1;
     flex-basis: 300px;
     padding: 20px;
+    animation: fadeInLeft 0.8s linear;
     li {
     list-style: inside;
     padding-bottom: 2%;
@@ -42,5 +45,24 @@ p {
 @media only screen and (max-width: 425px){
     p{
         font-size: 90%;
+    }
+}
+
+@keyframes fadeDown {
+    0%{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(-800px);
+    }
+    100% {
+        margin-left: 0;
     }
 }
